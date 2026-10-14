@@ -236,6 +236,7 @@ def default_suite(test_loader: unittest.TestLoader = unittest.defaultTestLoader)
     from warp.tests.test_operators import TestOperators
     from warp.tests.test_options import TestOptions
     from warp.tests.test_overwrite import TestOverwrite
+    from warp.tests.test_particle_bounce import TestParticleBounce
     from warp.tests.test_print import TestPrint
     from warp.tests.test_quat import TestQuat
     from warp.tests.test_rand import TestRand
@@ -430,6 +431,7 @@ def default_suite(test_loader: unittest.TestLoader = unittest.defaultTestLoader)
         TestOptions,
         TestOverwrite,
         TestParallelLoadSharedHelper,
+        TestParticleBounce,
         TestPeer,
         TestPinned,
         TestPrint,

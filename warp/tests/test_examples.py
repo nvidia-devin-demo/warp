@@ -259,6 +259,12 @@ add_example_test(TestCoreExamples, name="core.example_custom_allocator", devices
 add_example_test(TestCoreExamples, name="core.example_wave", devices=test_devices)
 add_example_test(
     TestCoreExamples,
+    name="core.example_particle_bounce",
+    devices=test_devices,
+    test_options={"num_frames": 60},
+)
+add_example_test(
+    TestCoreExamples,
     name="core.example_fft_poisson_navier_stokes_2d",
     devices=cuda_test_devices,
     test_options={"headless": True, "num_steps": 100, "sim_substeps": 10},
